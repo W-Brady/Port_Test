@@ -27,4 +27,14 @@ h1{
 }
 img{
 	border-radius: 50px;
+	width: 400px;
+	height: auto;
+}
+
+.hero{
+	outline: 100px solid red;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
