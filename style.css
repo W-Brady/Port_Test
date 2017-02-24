@@ -38,17 +38,36 @@ h1 sub:after{
 	content:")";
 	color:black;
 }
-
-img{
-	border-radius: 50px;
-	width: 400px;
-	height: auto;
-}
-
 .hero{
 	outline: 100px solid red;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+.hero img{
+	width: 100%;
+	height: 100%;
+}
+.primary{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%; 
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	transition:transform 1s, box-shadow 1s; 
+	background-image:url("secondary.jpg"); 
+	background-size: contain;
+
+}
+.primary:hover{
+	transform:rotate(360deg); 
+	box-shadow: 0px 0px 100px 50px #fc0;
+}
+.primary img{
+	transition: opacity 1s;
+}
+.primary:hover img{
+	opacity:0;
 }
